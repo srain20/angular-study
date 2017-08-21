@@ -1,0 +1,10 @@
+app.controller('HomeController',
+  ['$scope',
+    '$resource',
+    '$location',
+    '$q',
+    '$timeout',
+    function($scope,$resource,$location,$q,$timeout){
+        console.log('test111');
+    }
+]);

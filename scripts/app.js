@@ -1,0 +1,3 @@
+var app=angular.module("myApp",["ui.bootstrap","ngAnimate","ngTouch","ngSanitize","ui.router","ngSanitize","ngResource"]);app.config(["$stateProvider","$urlRouterProvider","$locationProvider",function(e,o,r){o.otherwise("/"),e.state("root",{url:"/",controller:"HomeController",templateUrl:"views/home/home.html"}).state("index",{url:"/index",controller:"HomeController",templateUrl:"views/home/home.html"}),r.html5Mode(!0)}]);
+app.controller("HomeController",["$scope","$resource","$location","$q","$timeout",function(){console.log("test111")}]);
+app.controller("HeadController",["$scope","$resource","$location","$q","$timeout",function(e){e.date=new Date}]);
